@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Netflix sign In</title>
+        <style>
+           *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            
+            body{
+                background:rgba(0, 0, 0, 0.5) url('form-background.png');
+                background-blend-mode: darken;
+            }
+            .logo img{
+                width: 12%;
+                margin-left: 30px;
+            }
+            .container{
+                position: absolute;
+                margin-left: 36%;
+                margin-top: 1%;
+                width: 440px;
+                height: 590px;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+            }
+            .container h1{
+                color: white;
+                margin-top: 60px;
+                margin-left: 50px;
+            }
+
+            input{
+                margin-left: 50px;
+                margin-top: 20px;
+                width: 320px;
+                height: 47px;
+                background-color: #333;
+                border-radius: 4px;
+                border: none;
+                font-size: 20px;
+                color: white;
+            }
+            input::placeholder{
+                font-size: 17px;
+                margin-left: 15px;
+                padding: 12px;
+            }
+            input[type=submit]{
+                width: 320px;
+                height: 45px;
+                background-color: red;
+                color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                margin-top: 40px;
+            }
+            input[type=checkbox]{
+                width: 25px;
+                height: 18px;
+                border-radius: 5px;
+            }
+            label{
+                color: rgb(125, 119, 119);
+            }
+            .form a{
+                float: right;
+                margin-top: 24px;
+                margin-right: 64px;
+               color: rgb(125, 119, 119);
+                text-decoration: none;
+            }
+            .content{
+            position: absolute;
+            margin-top: 80px;
+            font-size: 9px;
+            margin-left: 55px;
+            }
+            .content h2{
+                color: rgb(125, 119, 119);
+            }
+            .container a{
+                color: white;
+            }
+
+  
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="logo.png" >
+        </div>
+         <div class="container">
+            <h1>Sign In</h1>
+            <div class="form">
+                <input type="email" placeholder="Email or phone number" required>
+                <input type="password" placeholder="password">
+                <input type="submit" value="Sign In">
+                <input type="checkbox">
+                <label>Remember me</label>
+                <a href="#">Need help?</a>
+            </div>
+            <div class="content">
+                <h2>New to Netflix? <a href="http://127.0.0.1:5500/netflix%20home%20page.html">Sign up now.</a></h2><br>
+                <h2>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" style="color: rgb(35, 35, 245);"> learn more.</a></h2>
+            </div>
+         </div>
+        
+    </body>
+</html> 
